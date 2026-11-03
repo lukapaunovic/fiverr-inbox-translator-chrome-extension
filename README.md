@@ -6,7 +6,7 @@ Read client conversations in your preferred language and prepare replies in the 
 
 **[Download v1.1.0](https://github.com/lukapaunovic/fiverr-inbox-translator-chrome-extension/releases/latest)** · **[Installation](#install-the-chrome-extension)** · **[Privacy](docs/PRIVACY.md)** · **[Report a bug](https://github.com/lukapaunovic/fiverr-inbox-translator-chrome-extension/issues)**
 
-> Independent project. Not affiliated with or endorsed by Fiverr or OpenAI. Requires your own OpenAI API key and available API funding or applicable credits. This version is distributed through GitHub; it is not published on the Chrome Web Store.
+> Independent project. Not affiliated with or endorsed by Fiverr or OpenAI. Requires your own OpenAI API key and available API funding or applicable credits. Version 1.1.0 was submitted to the Chrome Web Store under publisher **DCX** on November 3, 2026. Status: **pending review**, with automatic publication after approval. It is not yet live in the store; the GitHub download is available now.
 
 ![Inbox translation and reply preview using synthetic demo content](docs/assets/01-inbox-translation.png)
 
