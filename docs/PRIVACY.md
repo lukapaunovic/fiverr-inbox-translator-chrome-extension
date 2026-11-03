@@ -1,6 +1,8 @@
 # Privacy notice
 
 **Project:** Inbox Translator for Fiverr  
+**Chrome Web Store publisher:** DCX  
+**Publisher contact:** kontakt@dcx.rs  
 **Maintainer:** Luka Paunović ([lukapaunovic](https://github.com/lukapaunovic))  
 **Updated:** 2026-11-03
 
