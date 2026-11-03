@@ -1,0 +1,9 @@
+.DS_Store
+.env
+.env.*
+private-config.json
+*PRIVATE*.zip
+node_modules/
+dist/
+work/
+*.log
