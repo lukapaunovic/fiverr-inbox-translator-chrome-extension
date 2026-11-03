@@ -1,0 +1,67 @@
+NAME
+Inbox Translator for Fiverr
+
+SHORT DESCRIPTION
+Translate Fiverr conversations and draft replies with your own OpenAI API key. Local translation cache.
+
+DETAILED DESCRIPTION
+Read and reply to multilingual Fiverr inbox conversations without repeatedly copying messages into a separate translator.
+
+Inbox Translator for Fiverr adds compact translation controls to your Fiverr inbox. Read received messages and your previously sent messages in your chosen language, while keeping the original text visible. Preview a translated reply, review it, then apply it to your draft. You remain in control of sending.
+
+FEATURES
+• Automatic source-language detection with an original-language label beside each translation.
+• Reply previews that follow the client's detected language, with a manual language override.
+• A broad language selector including English, German, Spanish, French, Portuguese, Arabic, Japanese, Hindi, Serbian and more. Translation quality and language coverage depend on the selected OpenAI model.
+• Reading language defaults to your Chrome language. Interface labels are available in English and Serbian, with English as the fallback.
+• Local translation cache for received and previously sent messages. Repeated text with the same target language and model can reuse a saved translation.
+• Compact, collapsible controls for smaller laptop screens.
+• Original messages remain visible. The extension does not send messages automatically.
+
+GET STARTED
+1. Open extension Settings and enter your own OpenAI API key.
+2. Read and enable the translation consent option.
+3. Open a Fiverr inbox conversation and choose your reading language.
+4. Write your reply, review the translation, and click Apply translation. Send using Fiverr's normal controls.
+
+REQUIREMENTS AND COSTS
+An OpenAI API key with available API funding or applicable credits is required. API usage is billed to your own OpenAI account. This version does not provide ChatGPT sign-in or use a ChatGPT subscription. No shared API key is included.
+
+PRIVACY
+When you enable translation, displayed message text and reply drafts needed for translation are sent directly to OpenAI. Your key, preferences and cached translations are stored locally in your Chrome profile, without Chrome Sync. No publisher-operated translation server, analytics or advertising is included. You can clear the translation cache in Settings.
+
+LIMITATIONS
+Works with text in the Fiverr web inbox. Attachments and voice messages are not translated. Translations may contain mistakes; review important messages before sending. Changes to Fiverr's interface may require an extension update.
+
+Independent, unofficial extension. Not affiliated with or endorsed by Fiverr or OpenAI. Fiverr and OpenAI are trademarks of their respective owners.
+
+SUPPORT
+https://github.com/lukapaunovic/fiverr-inbox-translator-chrome-extension/issues
+
+PRIVACY POLICY
+https://github.com/lukapaunovic/fiverr-inbox-translator-chrome-extension/blob/main/docs/PRIVACY.md
+
+CATEGORY
+Productivity / Communication
+
+SINGLE PURPOSE
+Help users understand and compose multilingual Fiverr inbox messages through user-enabled translation.
+
+STORAGE JUSTIFICATION
+Store the user's API key, translation consent, reading and reply-language preferences locally in the Chrome profile. Cache translated text in extension-local IndexedDB to avoid repeating identical translation requests. No Chrome Sync is used.
+
+HOST PERMISSIONS JUSTIFICATION
+Fiverr content scripts read displayed inbox message text, show original-language labels and translations, and insert a translation into the reply editor only when the user clicks Apply translation. The scripts match Fiverr pages to support in-site navigation to the inbox. The api.openai.com host permission allows the extension service worker to send consented translation requests directly to OpenAI using the user's own API key. The extension does not access Fiverr cookies or automatically send messages.
+
+REMOTE CODE
+No. All executable JavaScript is bundled with the extension. The OpenAI API returns translation text and structured data only.
+
+REVIEWER INSTRUCTIONS
+1. Install the extension. Settings opens automatically. No API key is bundled.
+2. Enter a reviewer-controlled OpenAI API key with API access, choose English as the reading language, and explicitly enable translation. API requests may incur charges on that key's account. Use Test translation to verify the setup.
+3. Sign into a reviewer-controlled Fiverr account and open a test inbox conversation with a message in German or another supported language. Only use test content with permission from the participants.
+4. The original text remains visible with a language label and an English translation below. Previously sent text messages are translated too.
+5. Type an English reply. A translated preview should follow the detected client language. Click Apply translation to insert it in the draft. No message is sent by the extension.
+6. Refresh the conversation: unchanged translations should load from the local cache. Open Settings to see or clear the cache.
+7. Use Options in the compact inbox panel to change the reading/reply languages or translation toggles.
+No publisher login, publisher backend, shared key or subscription to this extension is required. Store screenshots use synthetic demo conversation content; the translation controls are the actual extension UI.

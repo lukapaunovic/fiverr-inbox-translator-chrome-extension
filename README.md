@@ -8,6 +8,8 @@ Read client conversations in your preferred language and prepare replies in the 
 
 > Independent project. Not affiliated with or endorsed by Fiverr or OpenAI. Requires your own OpenAI API key and available API funding or applicable credits. This version is distributed through GitHub; it is not published on the Chrome Web Store.
 
+![Inbox translation and reply preview using synthetic demo content](docs/assets/01-inbox-translation.png)
+
 ## Features
 
 - **Automatic language detection:** reply previews follow the latest confidently detected client language. Short acknowledgments such as “OK” do not replace a reliable language choice.
